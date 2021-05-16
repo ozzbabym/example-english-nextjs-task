@@ -1,4 +1,7 @@
 module.exports = {
+  basePath: '/example-english-nextjs-task',
+  assetPrefix: '/example-english-nextjs-task',
+
   webpack(config, options) {
     const { isServer } = options;
     config.module.rules.push({
