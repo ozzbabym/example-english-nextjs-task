@@ -1,0 +1,113 @@
+.title {
+    min-height: 50px;
+    border-bottom: 1px solid grey;
+    background: #F1F1EF;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.titleYellow {
+    min-height: 50px;
+    border-bottom: 1px solid grey;
+    background: #ffcd38;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.description {
+    min-height: 50px;
+    border-bottom: 1px solid grey;
+    background: #FFF;
+    padding-top: 20px;
+    padding-left: 10px;
+    
+}
+
+
+.input {
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+    width: 50%;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    div{
+        height: 33px;
+        width: 120px;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        cursor: pointer;
+        margin: 0 10px;
+        border: 1px solid #29588d;
+        font-weight: 700;
+        transition: all 0.5s;
+    }
+    div:hover{
+        background-color: #29588d;
+        color: white;
+    }
+}  
+
+.button {
+    height: 40px;
+    width: 100px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0 20px;
+    
+}
+.buttonCheck {
+    height: 40px;
+    width: 100px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0 20px;
+    &:hover{
+        opacity: 0.8; 
+    }
+    &:active{
+        background: black !important;
+    }
+    
+}
+
+.cardContainer {
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    font-size: 18px;
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .cardContainer{
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .cardContainer{
+        grid-template-columns: 1fr;
+        width: 100vw;
+    }
+    
+}

@@ -1,0 +1,49 @@
+.menuWrapper {
+    margin: 0 100px;
+    img {
+        width: 100%;
+    }
+}
+
+
+.buttonMore {
+    background-color: #303C4A;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid #303C4A;
+    transition: all 0.5s;
+    
+    &:hover {
+        background-color: white;
+        border: 1px solid black;
+        color: #303C4A;
+    }
+}
+.itemContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    .itemContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .itemContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .menuWrapper {
+        margin: 0px 10px;
+    }
+}
